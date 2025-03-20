@@ -1,12 +1,38 @@
-# React + Vite
+Интернет-магазин с карточками товаров
+Этот проект представляет собой интернет-магазин с карточками товаров, разработанный с использованием современных инструментов и технологий. Проект включает в себя базовую структуру приложения, управление состоянием с помощью Redux Toolkit, а также различные функции, такие как фильтрация, сортировка, поиск товаров, корзина и поддержка темной/светлой темы.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Технологии
+React 18+: Библиотека для построения пользовательских интерфейсов.
 
-Currently, two official plugins are available:
+Redux Toolkit: Управление состоянием приложения.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Material-UI (MUI): Библиотека компонентов для создания современного и адаптивного интерфейса.
 
-## Expanding the ESLint configuration
+Vite: Сборщик проекта, обеспечивающий высокую производительность и удобство разработки.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Mock API: Используется для имитации API товаров.
+
+Функциональность
+Отображение товаров: Базовый интерфейс для отображения карточек товаров.
+
+Фильтрация, сортировка и поиск: Возможность фильтрации, сортировки и поиска товаров.
+
+Корзина: Добавление и удаление товаров, отображение общей стоимости.
+
+Локальное кэширование корзины: Сохранение состояния корзины в локальном хранилище браузера.
+
+Темы: Переключение между светлой и темной темой с сохранением состояния.
+
+Установка и запуск
+Клонирование репозитория:
+git clone https://github.com/ваш-username/интернет-магазин.git
+cd интернет-магазин
+
+Установка зависимостей:
+npm install
+
+Запуск сервера для товаров:
+json-server --watch public/data.json --port 3001
+
+Запуск проекта:
+npm run dev
